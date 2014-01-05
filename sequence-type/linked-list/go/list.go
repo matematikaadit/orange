@@ -26,8 +26,8 @@ func (list *List) Pop() (x int) {
 	return
 }
 
-func (list *List) String() string {
-	str := "{"
+func (list *List) String() (str string) {
+	str = "{"
 	for cur := list.head; cur != nil; cur = cur.next {
 		str += strconv.Itoa(cur.data)
 		if cur.next != nil {
@@ -35,5 +35,5 @@ func (list *List) String() string {
 		}
 	}
 	str += "}"
-	return str
+	return
 }
