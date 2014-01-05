@@ -1,5 +1,7 @@
 package list
 
+import "strconv"
+
 type Node struct {
 	next *Node
 	data int
